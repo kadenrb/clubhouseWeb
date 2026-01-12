@@ -78,7 +78,6 @@
     <div class="CarouselCont">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <!-- Adjust the column width as needed -->
           <div id="carousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -154,13 +153,7 @@
                   alt="TV"
                 />
                 <div class="text-overlay">
-                  <h3>WELCOME TO THE CLUB HOUSE</h3>
-                </div>
-                <div class="text-under">
-                  <h3>
-                    CENTRAL ALBERTA'S <span class="gold-text">#1</span> GAME
-                    CENTRE
-                  </h3>
+                  <h3>THE CLUB HOUSE</h3>
                 </div>
               </div>
 
@@ -171,13 +164,7 @@
                   alt="Terminator"
                 />
                 <div class="text-overlay">
-                  <h3>WELCOME TO THE CLUB HOUSE</h3>
-                </div>
-                <div class="text-under">
-                  <h3>
-                    CENTRAL ALBERTA'S <span class="gold-text">#1</span> GAME
-                    CENTRE
-                  </h3>
+                  <h3>THE CLUB HOUSE</h3>
                 </div>
               </div>
             </div>
@@ -185,17 +172,35 @@
         </div>
       </div>
     </div>
+    <div
+      class="card bg-dark rounded-4 mx-1 neon-red-border mt-4 flex-row overflow-hidden justify-content-center"
+    >
+      <img
+        src="ClubhousePics/happyHour.png"
+        alt="CLUBHOUSEHOURS"
+        class="img-fluid w-50 border-right border-dark"
+      />
+      <img
+        src="ClubhousePics/pool.png"
+        alt="CLUBHOUSEHOURS"
+        class="img-fluid w-50 border-left border-dark"
+      />
+    </div>
 
-    <div class="card bg-dark border-0 rounded-4 mx-4">
-      <h3 class="text-center mt-4 headers" id="Location">
+    <div class="card bg-dark border-0 rounded-4 mx-4 neon-red-border mt-4">
+      <h3 class="text-center mt-4 header" id="Location">
         Location Information
       </h3>
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19545.65405668723!2d-113.7501711!3d52.2396281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537455007c1e16fd%3A0xbc394a0e4c507584!2sThe%20Club%20House!5e0!3m2!1sen!2sca!4v1714778623813!5m2!1sen!2sca"
-          width="700"
-          height="400"
-          style="border: 0"
+          style="
+            border: 0;
+            width: 75vw;
+            height: 50vh;
+            min-height: 300px;
+            display: block;
+          "
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -206,90 +211,78 @@
         corner of Village Mall
       </p>
     </div>
-    <hr style="background-color: black" />
-    <h3 class="text-center mt-4 headers" id="Info">
-      General Information and Frequently Asked Questions
-    </h3>
-    <p class="contInfo">Our Hours:</p>
-    <div class="HoursImg">
-      <img
-        src="ClubhousePics/Screenshot%202024-05-21%20160546.png"
-        alt="CLUBHOUSEHOURS"
-      />
-    </div>
-    <p class="mapInfo">
-      Please note after the stated times we are unable to have people enter The
-      Clubhouse
-    </p>
-
-    <div class="text-center mt-5">
-      <p class="faq-text">Are kids allowed at The Club House?</p>
-      <p class="faq-text">Answer: Absolutly!</p>
-      <span class="answer"
-        >Minors are welcome at The Club House every day except Fridays and
-        Saturdays after 9 PM.</span
+    <div class="card bg-dark border-0 rounded-4 mx-4 neon-red-border mt-4">
+      <h3 class="text-center mt-4 header" id="Info">Our Hours</h3>
+      <div class="HoursImg">
+        <img
+          src="ClubhousePics/Screenshot%202024-05-21%20160546.png"
+          alt="CLUBHOUSEHOURS"
+        />
+      </div>
+      <span class="text-danger fw-bold"
+        >*DONT KNOW IF THIS IS STILL ACCURATE*</span
       >
+      <p class="mapInfo">
+        Please note after the stated times we are unable to have people enter
+        The Clubhouse
+      </p>
     </div>
-    <div class="text-center mt-5">
-      <p class="faq-text">How do I book a party or event?</p>
-      <span class="answer"
-        >Email our event coordinator at
-        <a href="mailto:info@ClubHouseRD.com">info@ClubHouseRD.com</a> to book
-        your next event!</span
-      >
+    <div class="card bg-dark border-0 rounded-4 mx-4 neon-red-border mt-4">
+      <h3 class="text-center mt-4 header" id="Location">FAQ's</h3>
+      <div class="text-center mt-2 mx-2">
+        <p class="faq-text">Are kids allowed at The Club House?</p>
+        <span class="answer"
+          >Minors are welcome at The Club House every day except Fridays and
+          Saturdays after 9 PM.<span class="text-danger fw-bold"
+            >*DONT KNOW IF THIS IS STILL ACCURATE*</span
+          ></span
+        >
+      </div>
+      <div class="text-center mt-5">
+        <p class="faq-text">How do I book a party or event?</p>
+        <span class="answer"
+          >Email our event coordinator at
+          <a href="mailto:info@ClubHouseRD.com">info@ClubHouseRD.com</a> to book
+          your next event!<span class="text-danger fw-bold"
+            >*DONT KNOW IF THIS IS STILL ACCURATE*</span
+          ></span
+        >
+      </div>
+      <div class="text-center mt-5">
+        <p class="faq-text">Do you serve food?</p>
+        <span class="answer"
+          >Check out our menu <a href="menu.html">here</a>!</span
+        ><span class="text-danger fw-bold">*MIGHT HAVE CHANGED THE MENU*</span>
+      </div>
     </div>
-    <div class="text-center mt-5">
-      <p class="faq-text">Do you serve food?</p>
-      <span class="answer"
-        >Check out our menu <a href="menu.html">here</a>!</span
-      >
-    </div>
-    <hr style="background-color: black" />
-    <h3 class="text-center mt-4 headers" id="Contact">Contact Information</h3>
-    <p class="mapInfo">Please select how you'd like to contact us</p>
 
     <div class="contactcont">
-      <div class="row">
-        <!-- On desktop (medium and above screens) -->
-
-        <div class="col-md-6 hidden-sm text-center">
-          <p class="contInfo">
-            Contact us by email:
-            <a href="mailto:info@ClubHouseRD.com">info@ClubHouseRD.com</a>
-          </p>
-        </div>
-        <div class="col-md-6 hidden-sm text-center">
-          <p class="contInfo">Contact us on Instagram</p>
-          <a
-            href="https://www.instagram.com/the.clubhousereddeer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          >
-            <img
-              src="ClubhousePics/instagram.1024x1024.png"
-              alt="Image 1"
-              class="img-fluid img-sm"
-            />
-          </a>
-        </div>
-
-        <!-- On mobile (small screens) -->
-
-        <div class="col-6 hidden-md text-center">
-          <p class="contInfo">
-            Contact us by email:
-            <a href="mailto:info@ClubHouseRD.com">info@ClubHouseRD.com</a>
-          </p>
-        </div>
-        <div class="col-6 hidden-md text-center">
-          <p class="contInfo">Contact us on Instagram</p>
-          <a
-            href="https://www.instagram.com/the.clubhousereddeer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          >
-            <img
-              src="ClubhousePics/instagram.1024x1024.png"
-              alt="Image 1"
-              class="img-fluid img-md"
-            />
-          </a>
+      <div class="card bg-dark border-0 rounded-4 mx-4 neon-red-border my-4">
+        <h3 class="text-center mt-4 header" id="Contact">
+          Contact Information
+        </h3>
+        <span class="text-danger fw-bold"
+          >*DONT KNOW IF THIS IS STILL ACCURATE*</span
+        >
+        <div class="">
+          <div class="">
+            <p class="contInfo">
+              Contact us by email:
+              <a href="mailto:info@ClubHouseRD.com">info@ClubHouseRD.com</a>
+            </p>
+          </div>
+          <div class="justify-content-center text-center mb-2">
+            <p class="contInfo">Contact us on Instagram</p>
+            <a
+              href="https://www.instagram.com/the.clubhousereddeer?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
+              <img
+                src="ClubhousePics/instagram.1024x1024.png"
+                alt="Image 1"
+                class="img-fluid w-50"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
