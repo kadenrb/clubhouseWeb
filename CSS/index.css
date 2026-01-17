@@ -14,6 +14,10 @@
   transition: all 0.3s ease;
 }
 
+.neon-logo {
+  filter: drop-shadow(1px 1px 10px #ff0202) drop-shadow(1px 1px 20px #ff0000) !important;
+}
+
 .navbar-image {
   width: 45px;
 }
@@ -41,6 +45,12 @@
 .neon-red-border {
   border: 2px solid #ff3131 !important;
   box-shadow: 0 0 10px #ff3131, inset 0 0 5px #ff3131;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.neon-green-border {
+  border: 2px solid #39ff14 !important;
+  box-shadow: 0 0 10px #39ff14, inset 0 0 5px #39ff14;
   transition: box-shadow 0.3s ease-in-out;
 }
 
