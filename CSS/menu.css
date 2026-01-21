@@ -18,6 +18,25 @@
   width: 45px;
 }
 
+.header-red {
+  text-align: center;
+  color: #fff;
+  font-family: "Iceland", sans-serif;
+  text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000,
+    0 0 7px #ff0000,
+    0 0 10px #ff0000,
+    0 0 21px #ff0000,
+    0 0 42px #ff4d4d,
+    0 0 82px #e60000,
+    0 0 92px #e60000,
+    0 0 102px #e60000,
+    0 0 151px #e60000;
+}
+
 .sticky-navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -35,26 +54,14 @@
 }
 
 body {
-  background: rgb(255, 0, 0);
-  background: -moz-linear-gradient(
-    103deg,
-    rgba(255, 0, 0, 0.5608368347338936) 0%,
-    rgba(127, 0, 131, 0.6420693277310925) 50%,
-    rgba(0, 92, 255, 0.5272233893557423) 100%
-  );
-  background: -webkit-linear-gradient(
-    103deg,
-    rgba(255, 0, 0, 0.5608368347338936) 0%,
-    rgba(127, 0, 131, 0.6420693277310925) 50%,
-    rgba(0, 92, 255, 0.5272233893557423) 100%
-  );
+  background: #77151f;
   background: linear-gradient(
-    103deg,
-    rgba(255, 0, 0, 0.5608368347338936) 0%,
-    rgba(127, 0, 131, 0.6420693277310925) 50%,
-    rgba(0, 92, 255, 0.5272233893557423) 100%
+    131deg,
+    rgb(31, 7, 9) 0%,
+    rgb(24, 15, 58) 27%,
+    rgb(26, 15, 56) 81%,
+    rgb(7, 7, 32) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000", endColorstr="#005cff", GradientType=1);
 }
 
 .carousel-inner img {
@@ -68,7 +75,10 @@ body {
 .text-under {
   text-align: center;
   color: #fff;
-  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+  text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
     0.5px 0.5px 0 #000;
   display: inline-block;
 }
@@ -79,22 +89,15 @@ body {
 
 .guest-text {
   color: whitesmoke;
-  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+  text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
     0.5px 0.5px 0 #000;
 }
 
 .HoursImg {
   text-align: center;
-}
-
-.text-overlay {
-  text-align: center;
-  color: #fff;
-  font-family: "Dancing Script";
-  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
-    0.5px 0.5px 0 #000, 0 0 7px #ff5d96, 0 0 10px #ff7ae9, 0 0 21px #ff57ca,
-    0 0 42px rgb(238, 126, 210), 0 0 82px hotpink, 0 0 92px hotpink,
-    0 0 102px hotpink, 0 0 151px hotpink;
 }
 
 .menu-text {
@@ -305,5 +308,7 @@ h1 {
   max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
