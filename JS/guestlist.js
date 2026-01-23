@@ -1,5 +1,6 @@
+// Initialize EmailJS
 (function () {
-  emailjs.init("YOUR_PUBLIC_KEY_HERE");
+  emailjs.init("iv9fpiLFV4WiR59uz");
 })();
 
 // Handle Submit
@@ -18,7 +19,7 @@ document
     btn.disabled = true;
 
     // Send the form
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this).then(
+    emailjs.sendForm("service_xsk1367", "template_usnubgm", this).then(
       function () {
         btn.innerText = "SENT!";
         btn.classList.remove("btn-primary");
@@ -48,9 +49,22 @@ document
     );
   });
 
-// Flatpickr initialization
 flatpickr("#event-date", {
   enableTime: true,
-  dateFormat: "Y-m-d H:i",
-  minDate: "today", // Prevents booking in the past
+  dateFormat: "Y-m-d h:i K",
+  time_24hr: false,
+  minuteIncrement: 30,
+  minDate: "today",
+  disableMobile: "true",
 });
+
+// Update guest count display
+const range = document.querySelector("#range");
+const count = document.querySelector("#count");
+
+if (range && count) {
+  range.addEventListener("input", (event) => {
+    // Update the text on the screen
+    count.textContent = event.target.value;
+  });
+}

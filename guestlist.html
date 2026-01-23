@@ -89,10 +89,12 @@
         <input type="hidden" name="Clubhouse" value="ClubhouseReservation" />
 
         <div class="mb-3">
-          <label class="form-label text-light">Name</label>
+          <label class="form-label text-light"
+            >Name<span class="text-danger">*</span></label
+          >
           <input
             type="text"
-            name="user_name"
+            name="name"
             class="form-control bg-secondary text-white border-0"
             required
           />
@@ -100,41 +102,73 @@
 
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label class="form-label text-light">Email</label>
+            <label class="form-label text-light"
+              >Email<span class="text-danger">*</span></label
+            >
             <input
               type="email"
-              name="user_email"
+              name="email"
               class="form-control bg-secondary text-white border-0"
               required
             />
           </div>
           <div class="col-md-6 mb-3">
-            <label class="form-label text-light">Phone</label>
+            <label class="form-label text-light">Phone #</label>
             <input
               type="tel"
-              name="user_phone"
+              name="phone"
               class="form-control bg-secondary text-white border-0"
             />
           </div>
+
+          <div class="col-md-6 mb-3">
+            <label class="form-label text-light"
+              >Date and Time<span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              id="event-date"
+              name="time"
+              class="form-control bg-dark text-white neon-blue-border"
+              placeholder="Select Date.."
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label
+              for="range"
+              class="form-label text-light d-flex justify-content-between"
+            >
+              <div>Number of Guests:<span class="text-danger">*</span></div>
+              <span id="count" class="text-white">10</span>
+            </label>
+            <input
+              type="range"
+              class="custom-range"
+              min="1"
+              max="30"
+              id="range"
+              name="amount"
+              value="10"
+              required
+            />
+
+            <div class="d-flex justify-content-between text-secondary small">
+              <span>1</span>
+              <span>30+</span>
+            </div>
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <label class="form-label text-light">Extra Details:</label>
+            <textarea
+              placeholder="If over 30 guests, please specify number here along with any other details..."
+              name="message"
+              class="form-control bg-dark text-white neon-blue-border"
+              rows="5"
+            ></textarea>
+          </div>
         </div>
-
-        <input
-          type="text"
-          id="event-date"
-          class="form-control bg-dark text-white neon-blue-border"
-          placeholder="Select Date.."
-        />
-
-        <div class="mb-3">
-          <label class="form-label text-light">Details / Date</label>
-          <textarea
-            name="message"
-            class="form-control bg-secondary text-white border-0"
-            rows="3"
-            required
-          ></textarea>
-        </div>
-
         <button
           type="submit"
           id="submit-btn"
@@ -155,6 +189,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script src="JS/guestlist.js"></script>
   </body>
 </html>
