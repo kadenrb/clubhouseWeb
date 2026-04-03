@@ -2,6 +2,19 @@
   position: relative;
 }
 
+/* Accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .GlowImageText {
   color: lightgrey;
 }
@@ -66,6 +79,16 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
+.neon-lite-green {
+  color: #fff !important;
+  text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000,
+    0 0 5px #32cd32,
+    0 0 10px #32cd32;
+}
 .nav-item {
   border: #292929 dotted 1px;
   border-radius: 1px;
@@ -105,6 +128,12 @@ body {
     0.5px -0.5px 0 #000,
     -0.5px 0.5px 0 #000,
     0.5px 0.5px 0 #000;
+}
+
+.logo-icon {
+  width: 25vw;
+  max-width: 500px;
+  min-width: 160px;
 }
 
 .HoursImg {
@@ -215,6 +244,11 @@ body {
     width: 70vw;
   }
 
+  .logo-icon {
+    min-width: 75px;
+    width: 20vw;
+  }
+
   /* Smaller font size for phones */
   .text-overlay h3 {
     font-size: 8vw;
@@ -250,7 +284,7 @@ body {
     line-height: 1.05;
   }
 
-  .col-lg-4 {
+  .row .col-lg-4 {
     flex: 0 0 50%;
     /* Two cards per row on small screens */
     max-width: 50%;

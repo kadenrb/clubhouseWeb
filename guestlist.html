@@ -41,7 +41,7 @@
       <a class="navbar-brand" href="#"
         ><img
           src="ClubhousePics/V1-B%20(Gridlines).png"
-          alt="CLUBHOUSE_LOGO"
+          alt="The Clubhouse Logo"
           width="180"
           class="align-top"
       /></a>
@@ -78,7 +78,7 @@
         </ul>
       </div>
     </nav>
-    <div class="card bg-dark neon-blue-border mx-4 p-4 mt-5">
+    <div class="card bg-dark neon-blue-border my-3 mx-3 p-4">
       <h1 class="header-blue mb-4 display-3">Book Your Event</h1>
 
       <div id="success-alert" class="alert alert-success d-none" role="alert">
@@ -89,40 +89,45 @@
         <input type="hidden" name="Clubhouse" value="ClubhouseReservation" />
 
         <div class="mb-3">
-          <label class="form-label text-light"
+          <label class="form-label text-light" for="name"
             >Name<span class="text-danger">*</span></label
           >
           <input
             type="text"
+            id="name"
             name="name"
             class="form-control bg-secondary text-white border-0"
             required
+            aria-required="true"
           />
         </div>
 
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label class="form-label text-light"
+            <label class="form-label text-light" for="email"
               >Email<span class="text-danger">*</span></label
             >
             <input
               type="email"
+              id="email"
               name="email"
               class="form-control bg-secondary text-white border-0"
               required
+              aria-required="true"
             />
           </div>
           <div class="col-md-6 mb-3">
-            <label class="form-label text-light">Phone #</label>
+            <label class="form-label text-light" for="phone">Phone #</label>
             <input
               type="tel"
+              id="phone"
               name="phone"
               class="form-control bg-secondary text-white border-0"
             />
           </div>
 
           <div class="col-md-6 mb-3">
-            <label class="form-label text-light"
+            <label class="form-label text-light" for="event-date"
               >Date and Time<span class="text-danger">*</span></label
             >
             <input
@@ -132,6 +137,7 @@
               class="form-control bg-dark text-white neon-blue-border"
               placeholder="Select Date.."
               required
+              aria-required="true"
             />
           </div>
           <div class="col-md-6 mb-3">
@@ -151,6 +157,7 @@
               name="amount"
               value="10"
               required
+              aria-required="true"
             />
 
             <div class="d-flex justify-content-between text-secondary small">
@@ -160,8 +167,9 @@
           </div>
 
           <div class="col-md-12 mb-3">
-            <label class="form-label text-light">Extra Details:</label>
+            <label class="form-label text-light" for="message">Extra Details:</label>
             <textarea
+              id="message"
               placeholder="If over 30 guests, please specify number here along with any other details..."
               name="message"
               class="form-control bg-dark text-white neon-blue-border"
@@ -189,10 +197,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
     <script src="JS/guestlist.js"></script>
   </body>
 </html>
