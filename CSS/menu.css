@@ -68,7 +68,6 @@ body {
   width: 100%;
   height: 50vw;
   object-fit: cover;
-  /* Ensure the image covers the entire area */
 }
 
 /* Positioning the text container */
@@ -117,7 +116,6 @@ body {
   .text-overlay h3 {
     font-size: 4.3vw;
     font-weight: bold;
-    /* Adding shadow for better readability */
     position: absolute;
     top: 10%;
     left: 35%;
@@ -131,21 +129,17 @@ body {
   .text-under h3 {
     font-size: 12px;
     font-weight: bold;
-    /* Adding shadow for better readability */
     position: absolute;
     top: 20%;
     left: 35%;
     transform: translate(-50%, -50%);
   }
 
-  /* Smaller font size for phones */
   .headers {
     font-size: 18px;
     font-weight: bold;
     font-family: "Trebuchet MS", sans-serif;
-    /* Make the text bold */
     color: azure;
-    /* Text color */
   }
 
   .col-lg-4 {
@@ -173,7 +167,6 @@ body {
     font-size: 10px;
     font-weight: bold;
     font-family: "Trebuchet MS", sans-serif;
-    /* Make the text bold */
     color: azure;
     text-align: center;
   }
@@ -186,7 +179,6 @@ body {
     font-size: 5vw;
     text-align: center;
     font-weight: bold;
-    /* Make the text bold */
     color: azure;
     font-family: "Trebuchet MS", sans-serif;
   }
@@ -219,7 +211,6 @@ body {
   .text-overlay h3 {
     font-size: 3.8vw;
     font-weight: bold;
-    /* Adding shadow for better readability */
     position: absolute;
     top: 10%;
     left: 28%;
@@ -233,7 +224,6 @@ body {
   .text-under h3 {
     font-size: 24px;
     font-weight: bold;
-    /* Adding shadow for better readability */
     position: absolute;
     top: 20%;
     left: 28%;
@@ -245,9 +235,7 @@ body {
     font-size: 36px;
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bold;
-    /* Make the text bold */
     color: azure;
-    /* Text color */
   }
 
   .hidden-md {
@@ -258,7 +246,6 @@ body {
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-    /* Make the text bold */
     color: azure;
     font-family: "Trebuchet MS", sans-serif;
   }

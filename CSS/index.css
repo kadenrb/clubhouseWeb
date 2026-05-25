@@ -89,6 +89,9 @@
     0 0 5px #32cd32,
     0 0 10px #32cd32;
 }
+.lime-green {
+  color: #32cd32 !important;
+}
 .nav-item {
   border: #292929 dotted 1px;
   border-radius: 1px;
